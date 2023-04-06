@@ -13,7 +13,7 @@ return {
   heirline = {
     -- define the separators between each section
     separators = {
-      left = { "", " " },  -- separator for the left side of the statusline
+      left = { "", " " }, -- separator for the left side of the statusline
       right = { " ", "" }, -- separator for the right side of the statusline
       tab = { "", "" },
     },
@@ -126,7 +126,7 @@ return {
           },
           -- the final component of the NvChad statusline is the navigation section
           -- this is very similar to the previous current working directory section with the icon
-          {   -- make nav section with icon border
+          { -- make nav section with icon border
             -- define a custom component with just a file icon
             status.component.builder {
               { provider = require("astronvim.utils").get_icon "ScrollText" },
